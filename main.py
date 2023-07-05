@@ -11,8 +11,8 @@ outcome = playeroutcome.playeroutcome(
 )
 
 if(outcome == "tie"):
-    print("TIE")
+    print("The game is a tie. -_-")
 elif(outcome == "win"):
-    print("WIN")
+    print("The player wins!!! :)")
 else:
-    print("LOSE")
+    print("The player losses :(")
