@@ -1,4 +1,7 @@
-def playeroutcome(gamedict: dict, playerthrow: str, computerthrow: str) -> str:
+import typing
+
+
+def playeroutcome(gamedict: typing.Dict[str, typing.List[str]], playerthrow: str, computerthrow: str) -> str:
     if playerthrow == computerthrow:
         return "tie"
     if computerthrow in gamedict[playerthrow]:
