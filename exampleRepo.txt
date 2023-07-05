@@ -1,0 +1,2 @@
+Slides and code examples can be found at:
+https://github.com/michael-weinstein/W32-git-docker-example
