@@ -1,11 +1,9 @@
 import rpsSupport
+import typing
 
-
-def playGame():
-    gameDict = rpsSupport.rules.rps
-    playerThrow = rpsSupport.getPlayerThrows.getUserInput(gameDict)
-    computerThrow = rpsSupport.getComputerThrow.computerthrow(gameDict)
-    outcome = rpsSupport.playeroutcome.playeroutcome(gameDict, playerThrow, computerThrow)
+if __name__ == "__main__":
+    ruleset = rpsSupport.gamePlay.getGameChoice()
+    outcome, computerThrow = rpsSupport.gamePlay.playGame(ruleset)
     print("Computer chose %s" %computerThrow)
     if(outcome == "tie"):
         print("The game is a tie. -_-")
@@ -13,7 +11,3 @@ def playGame():
         print("The player wins!!! :)")
     else:
         print("The player losses :(")
-
-
-if __name__ == "__main__":
-    playGame()
