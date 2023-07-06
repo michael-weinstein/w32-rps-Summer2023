@@ -14,7 +14,9 @@ def getUserInput(gamedict: typing.Dict[str, typing.List[str]]) -> str:
             userInput = int(userInput)
         except ValueError:
             print("Invalid Selection!")
-        if not 0 < userInput <= len(inputs):
-            print("Invalid Selection!")
             userInput = False
+        else:
+            if not 0 < userInput <= len(inputs):
+                print("Invalid Selection!")
+                userInput = False
     return inputs[userInput-1]
